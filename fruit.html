@@ -1,0 +1,1715 @@
+
+    <style>
+        body {
+            background: #f3f3f3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        span {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+            font-size: 100%;
+            vertical-align: baseline;
+        }
+
+        .main-title {
+            position: relative;
+            font-family: "Hind", sans-serif;
+            padding: 15px 0 15px 25px;
+            font-weight: 700;
+            font-size: 25px;
+        }
+
+        .fruit-left {
+            background: white;
+            padding: 0;
+            margin: 0;
+        }
+
+        .fruit-right {
+            background: white;
+            padding: 0;
+            margin: 0;
+        }
+
+        .f-list {
+
+            list-style: none;
+            background: white;
+            margin: 0;
+            width: 100%;
+        }
+
+        .f-list li img {
+            float: left;
+            width: 42%;
+            margin-right: 10px;
+        }
+
+        .f-list li {
+            vertical-align: baseline;
+            display: block;
+            width: 100%;
+            float: left;
+            padding: 8px 15px 18px 15px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .f-list li :last-child {
+
+        }
+
+        .left-title {
+            z-index: 100;
+            margin-top: 0px;
+            text-align: left;
+            min-height: 83px;
+            line-height: 45px;
+            padding-top: 20px;
+            color: white;
+            background-color: #f8694d;
+            border-color: transparent;
+        }
+
+        .right-title {
+
+            margin-top: 0px;
+            max-width: 64%;
+            text-align: left;
+            min-height: 80px;
+            line-height: 45px;
+            padding-top: 20px;
+            color: #f8694d;
+            background-color: white;
+            margin-bottom: 0px;
+        }
+
+        .product-meta .name {
+            /*margin: 0 0 10px;*/
+            line-height: 20px;
+            min-height: 36px;
+            max-height: 46px;
+            font-size: 14px;
+            overflow: hidden;
+            font-weight: 500;
+        }
+
+        .right-head {
+
+            margin-top: 0px;
+            padding: 0;
+            background: #fff;
+
+        }
+
+        .left-main {
+            background: white;
+        }
+
+        .nav {
+            display: inline-block;
+            padding-top: 18px !important;
+            max-height: 62px;
+            line-height: 30px;
+            overflow: hidden;
+            float: right;
+        }
+
+        .nav li {
+            float: left;
+            border: none;
+            margin: 0;
+        }
+
+        .right-main {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .main-left {
+            /*margin-left: -15px;*/
+            max-width: 33%;
+            padding: 0;
+        }
+
+        .main-right {
+            left: 282px;
+            position: absolute;
+            margin-left: -1px;
+            padding: 0;
+            border: 1px solid #cccccc;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .main-right ul li img {
+            float: right;
+            width: 100%;
+            margin-right: 10px;
+
+        }
+
+        .main-right ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .main-right ul li {
+            margin-bottom: -6px;
+            border: 1px solid #cccccc;
+            border-left: none;
+            border-top: none;
+
+        }
+
+        .product-price {
+            font-size: 15px;
+            text-align: left;
+            font-family: "Hind", sans-serif;
+            font-weight: 600;
+            color: #f8694d;
+        }
+
+        .tit {
+            display: block;
+            padding: 16px 15px 20px 15px;
+        }
+
+        .star-color {
+            color: red;
+        }
+
+        .fa-heart {
+            display: none;
+            cursor: pointer;
+        }
+
+        .header {
+
+        }
+
+        .bar {
+            padding: 0;
+            min-height: 38px;
+            font-weight: 300;
+            font-size: 12px;
+            font-family: "Hind", sans-serif;
+            background-color: #3D3D3D;
+            color: #666666;
+            position: relative;
+        }
+
+        .bar-contain {
+            line-height: 38px;
+        }
+
+        .bar-r {
+            font-size: 10px;
+            float: right;
+        }
+
+        .header-main {
+            background-color: white;
+            color: black;
+            border-bottom: 1px solid #e5e5e5;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.07);
+            margin-bottom: 20px;
+        }
+
+        .logo a {
+            background: url(images/logo.png) no-repeat 0 center;
+            min-height: 80px;
+            width: 100%;
+            display: inline-block;
+            top: -15px;
+        }
+
+        .n-list {
+            margin-top: 20px;
+            list-style: none;
+        }
+
+        .n-list li span {
+            padding: 16px 16px;
+            text-transform: uppercase;
+            font-size: 12px;
+            color: #333333;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-family: "Hind", sans-serif;
+        }
+
+        .n-list li {
+            float: left;
+
+        }
+
+        .bar-contain .bar-r .dropdown-menu {
+            margin: 4px 0 0;
+            border-radius: 0px;
+        }
+
+        .pts-widget .product-block .product-meta {
+            padding: 15px 20px 20px;
+        }
+
+        .tit a {
+            font-size: 15px;
+            text-align: left;
+            font-family: "Hind", sans-serif;
+            font-weight: 600;
+            color: #f8694d;
+        }
+
+        .input-group-select .btn {
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+
+        .search-input {
+            margin-top: 10px;
+            margin-left: -5px;
+            display: inline-block;
+            padding: 4px 50px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 1.42857143;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .btn-s:hover {
+            background-color: green;
+        }
+
+        .btn-car {
+            margin-top: 5px;
+            line-height: 30px;
+            background-color: transparent;
+            font-size: 12px;
+            padding: 0 9px;
+            color: white;
+            border-radius: 2px;
+            background: #f8694d;
+        }
+
+        .input-group-select .btn.btn-s {
+            margin-left: -5px;
+        }
+
+        @media (max-width: 1202px) {
+            #category_filter.btn {
+                width: 100%;
+                margin: 0px;
+            }
+            .container.in-f {
+               padding-top: 0px    ;
+            }
+.f-text{
+    padding: 30px;
+}
+            .right-head {
+                margin: 0;
+            }
+
+            .left-title {
+                text-align: center;
+            }
+
+            .right-title {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .run-pic {
+                margin: 0;
+            }
+
+            .run-pic img {
+                width: 100%;
+            }
+
+            .search-input {
+                margin-left: 0px;
+                width: 100%;
+
+            }
+
+            .input-group-select .btn.btn-s {
+                margin: 10px 0px;
+                width: 100%;
+            }
+
+            .tit a {
+                font-size: 25px;
+            }
+
+            a {
+                background-color: transparent;
+                font-size: 23px;
+            }
+
+            span {
+                font-size: 14px;
+            }
+
+            .logo a {
+                background-position-x: 50%;
+            }
+
+            .bar-r {
+                display: none;
+            }
+
+            .main-title {
+                padding: 0;
+            }
+
+            .main-right {
+                position: static;
+            }
+
+            #identifier2 {
+                display: none;
+            }
+
+            .row {
+                overflow: hidden;
+
+            }
+            .f-header h4 {
+                text-align: center;
+
+            }
+            .block_content{
+                text-align: -webkit-center;
+            }
+        }
+
+        @media (min-width: 325px) {
+            .bar-contain {
+                width: 100%;
+            }
+
+        }
+
+        h4 {
+            margin: 0;
+            text-align: center;
+            padding: 15px 0 15px 25px;
+            font-family: "Hind", sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            background: #F8694D;
+        }
+
+        .p-l-list {
+            list-style: none;
+        }
+
+        .p-l-list li span {
+            color: #acacac;
+            font-family: "Hind", sans-serif;
+            font-weight: 300;
+            border-bottom-color: rgba(255, 255, 255, 0.07);
+            padding: 11px 15px;
+            display: block;
+            line-height: 20px;
+        }
+
+        .p-l-list li:hover {
+            background: #111111;
+            border-bottom: 1px solid #6D6D6D;
+            border-top: 1px solid #6D6D6D;
+        }
+
+        .p-l-list li {
+            border-bottom: 1px solid #3D3D3D;
+            text-align: left;
+            background: #333333;
+            width: 100%;
+            height: auto;
+            position: static;
+
+        }
+
+        .carousel-control {
+            height: 20%;
+
+        }
+
+        .carousel-control.left {
+            background: none;
+        }
+
+        .carousel-control.right {
+            background: none;
+        }
+
+        .run-pic img {
+
+            /*margin: 0;*/
+        }
+
+        .p1 {
+            margin-bottom: 10px;
+        }
+
+        .best-title {
+            margin: 0;
+            width: 100%;
+            background: #6BC15F;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .best-item {
+            float: left;
+            width: 32%;
+
+        }
+
+        .best-item img {
+            width: 116%;
+            height: 20%;
+        }
+
+        .run-best {
+            padding: 0;
+
+        }
+
+        .left-b {
+            font-size: 20px;
+            position: absolute;
+            top: -42px;
+        }
+
+        .right-b {
+            font-size: 20px;
+            position: absolute;
+            top: -42px;
+            right: 0;
+        }
+
+        .best-title span {
+            line-height: 35px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #fff0f0;
+        }
+
+        .dropdown-menu .divider {
+            margin: 0;
+        }
+
+        .p2-main {
+            margin: 0;
+            margin-bottom: 15px;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .show-li {
+            width: 600px;
+            height: 300px;
+            background: #fff;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.07);
+        }
+
+        .hot-tip {
+            width: auto;
+        }
+
+        .hot-tip {
+            text-align: center;
+            display: block;
+            height: 42px;
+            position: absolute;
+            background-size: cover;
+            background: url(images/bg_productlabel.png) no-repeat 3px;
+            overflow: visible;
+            top: 64px;
+            width: 47px;
+            left: 128px;
+            font-variant: small-caps;
+            line-height: 40px;
+            color: red;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .font-show {
+            position: absolute;
+            color: rgb(255, 255, 255);
+            font-size: 54px;
+            padding: 0px;
+            margin: 0px;
+            border-width: 0px;
+            line-height: 36px;
+            white-space: nowrap;
+            min-width: 0px;
+            min-height: 0px;
+            visibility: visible;
+            opacity: 1;
+            left: 0px;
+            top: 50px;
+            animation-iteration-count: 1;
+            animation: mymove 3s;
+
+        }
+
+        @keyframes mymove {
+            0% {
+                left: 0px;
+                top: 50px;
+            }
+            50% {
+                left: 100px;
+                top: 50px;
+            }
+            100% {
+                left: 0px;
+                top: 50px;
+            }
+        }
+
+        .p-left ul {
+            /*手风琴不破坏样式*/
+            cursor: pointer;
+
+        }
+
+        .icon-list {
+            margin-left: 21px;
+            margin-bottom: 0;
+            list-style: none;
+        }
+
+        .icon-list li {
+            float: left;
+        }
+
+        .icon-list li a {
+            display: block;
+            padding: 15px;
+        }
+
+        .icon-show {
+            background: #FFFFFF;
+            margin: 0 auto;
+        }
+
+        .icon-left {
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+            line-height: 20px;
+            text-align: center;
+            position: absolute;
+            top: 30px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .icon-right {
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+            float: right;
+            line-height: 20px;
+            text-align: center;
+            position: absolute;
+            top: 30px;
+            right: 0;
+            width: 20px;
+            height: 20px;
+        }
+
+        .p4 {
+            margin: 15px auto;
+        }
+
+        .f-header h4 {
+
+            color: white;
+            background: #3a3a3a;
+            font-size: 16px;
+        }
+
+        .f-header {
+            background-color: #3a3a3a;
+            color: #999999;
+            padding: 0;
+            border-bottom: 1px solid #444;
+            min-height: 95px;
+            padding-top: 28px;
+            padding-bottom: 28px;
+        }
+        .newsletter-input {
+            padding: 0 120px 0 30px;
+            background-color: white;
+            border-color: white;
+            color: #828282;
+        }
+        .form-group{
+            position: relative;
+            border-radius: 2px;
+            overflow: hidden;
+            margin-bottom: 0;
+            width: 80%;
+            margin-top: 10px;
+        }
+        .btn-primary {
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #2e6da4;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+
+        }
+        .f-main{
+            background: #333333;
+            color: #999999;
+            padding: 0px;
+            border-bottom: 1px solid #3d3d3d;
+
+        }
+        .f-footer{
+            background: #333333;
+            color: white;
+            background: #333333;
+            padding: 15px 0 20px 0;
+        }
+        .in-f{
+            padding: 40px;
+        }
+        .h-t{
+       color: #F8694D;
+        }
+        .h-t:hover{
+            color: whitesmoke;
+        }
+    </style>
+
+
+<!--<header class="header ">-->
+    <!--<div class="bar">-->
+        <!--<div class="bar-contain container ">-->
+            <!--<span class="">Welcome , you can-->
+                <!--<a href="login.html" style="color: #C7C7C7;">-->
+                <!--Login-->
+            <!--</a>-->
+                <!--or <span style="color: #C7C7C7;">Create an account</span>-->
+            <!--</span>-->
+            <!--<div class="btn-group bar-r ">-->
+                <!--<a data-toggle="dropdown" class=" dropdown-toggle btn  pull-right"-->
+                   <!--style="color: #C7C7C7;font-size: 10px">-->
+                    <!--SETTINGS-->
+                    <!--<i class="fa fa-angle-down"></i>-->
+                <!--</a>-->
+                <!--<ul class="dropdown-menu">-->
+                    <!--<li><a href="#">Dollar (USD)</a></li>-->
+                    <!--<li class="divider"></li>-->
+                    <!--<li><a href="#">Euros(EUR)</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="btn-group bar-r ">-->
+                <!--<a data-toggle="dropdown" class=" dropdown-toggle btn  pull-right"-->
+                   <!--style="font-size: 10px;color: #C7C7C7;">-->
+                    <!--CDUS-->
+                    <!--<i class="fa fa-angle-down"></i>-->
+                <!--</a>-->
+                <!--<ul class="dropdown-menu">-->
+                    <!--<li><a href="#">Dollar (USD)</a></li>-->
+                    <!--<li class="divider"></li>-->
+                    <!--<li><a href="#">Euros(EUR)</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="btn-group bar-r ">-->
+                <!--<a data-toggle="dropdown" class=" dropdown-toggle btn  pull-right"-->
+                   <!--style="font-size: 10px;color: #C7C7C7;"><span><img-->
+                        <!--style="vertical-align: middle;"-->
+                        <!--src="http://demovenustheme.com/megashop/food/img/l/1.jpg"-->
+                        <!--alt="en"-->
+                        <!--width="16" height="11"></span> ENGLISH-->
+                    <!--<i class="fa fa-angle-down"></i>-->
+                <!--</a>-->
+                <!--<ul class="dropdown-menu">-->
+                    <!--<li><a href="#">Dollar (USD)</a></li>-->
+                    <!--<li class="divider"></li>-->
+                    <!--<li><a href="#">Euros(EUR)</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="header-main">-->
+        <!--<div class="container">-->
+            <!--<div class="logo col-xs-12 col-sm-6 col-md-3 col-lg-3 inner">-->
+                <!--<a href=""></a>-->
+            <!--</div>-->
+            <!--<nav class="hidden-sm hidden-xs menu col-lg-9 col-md-9 col-sm-12 col-xs-12 sf-contener pts-megamenu pull-right">-->
+                <!--<ul class="n-list ">-->
+                    <!--<li data-toggle="dropdown" class="dropdown-toggle" hover="1"><span>HOME-->
+
+                    <!--</span></li>-->
+                    <!--<div class="move">-->
+                        <!--<li data-toggle="dropdown" class="dropdown-toggle">-->
+                            <!--<span>SNACKS <i class="fa fa-angle-down"></i></span>-->
+                        <!--</li>-->
+                        <!--<div class="dropdown-menu" style="width:842px">-->
+                            <!--<div class="dropdown-menu-inner">-->
+                                <!--<div class="row">-->
+                                    <!--<div class="mega-col col-sm-2">-->
+
+
+                                        <!--<img src="images/2017-03-23_103513.png"></div>-->
+                                    <!--<div class="mega-col col-sm-5">-->
+
+
+                                    <!--</div>-->
+                                    <!--<div class="mega-col col-sm-5">-->
+
+
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="move">-->
+                        <!--<li data-toggle="dropdown" class="dropdown-toggle"><span>FRUIT <i-->
+                                <!--class="fa fa-angle-down"></i></span></li>-->
+                        <!--<div class="dropdown-menu" style="width:575px">-->
+                            <!--<div class="dropdown-menu-inner">-->
+                                <!--<div class="row">-->
+                                    <!--<div class="mega-col col-sm-2">-->
+
+                                        <!--<img src="images/2017-03-23_103625.png" height="267" width="573"/></div>-->
+                                    <!--<div class="mega-col col-sm-5">-->
+
+
+                                    <!--</div>-->
+                                    <!--<div class="mega-col col-sm-5">-->
+
+
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<li data-toggle="dropdown" class="dropdown-toggle"><span>IMPORTED FOOD <i-->
+                            <!--class="fa fa-angle-down"></i></span></li>-->
+                    <!--<li data-toggle="dropdown" class="dropdown-toggle"><span>BEVERAGE <i-->
+                            <!--class="fa fa-angle-down"></i></span></li>-->
+                    <!--<li data-toggle="dropdown" class="dropdown-toggle"><span>BLOG <i-->
+                            <!--class="fa fa-angle-down"></i></span></li>-->
+                    <!--<li data-toggle="dropdown" class="dropdown-toggle"><span>CONTACT</span></li>-->
+                <!--</ul>-->
+            <!--</nav>-->
+            <!--<div class=" input-group-select">-->
+
+                <!--<select class="btn" style="border: 1px solid #A9A9A9;border-radius: 0" name="category_filter"-->
+                        <!--id="category_filter">-->
+                    <!--<option value="0">All Categories</option>-->
+                    <!--<option value="2">&#45;&#45; Home</option>-->
+                    <!--<option value="15" selected="selected">-->
+                        <!--&#45;&#45;&#45;&#45; Delicious Snacks-->
+                    <!--</option>-->
+                    <!--<option value="29">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Trends-->
+                    <!--</option>-->
+
+                    <!--<option value="32">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Casual Outfits-->
+                    <!--</option>-->
+
+                    <!--<option value="30">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Street Style-->
+                    <!--</option>-->
+
+                    <!--<option value="60">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Designer-->
+                    <!--</option>-->
+
+                    <!--<option value="31">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Dresses-->
+                    <!--</option>-->
+
+                    <!--<option value="12">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Accessories-->
+                    <!--</option>-->
+
+
+                    <!--<option value="14">-->
+                        <!--&#45;&#45;&#45;&#45; Fresh Fruit-->
+                    <!--</option>-->
+                    <!--<option value="24">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Make up-->
+                    <!--</option>-->
+
+                    <!--<option value="25">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Cleanser-->
+                    <!--</option>-->
+
+                    <!--<option value="26">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Skin Care-->
+                    <!--</option>-->
+
+                    <!--<option value="33">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Hair Care-->
+                    <!--</option>-->
+
+                    <!--<option value="61">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Perfume-->
+                    <!--</option>-->
+
+                    <!--<option value="34">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Accessories-->
+                    <!--</option>-->
+
+
+                    <!--<option value="13">-->
+                        <!--&#45;&#45;&#45;&#45; Imported Food-->
+                    <!--</option>-->
+                    <!--<option value="16">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Boots-->
+                    <!--</option>-->
+                    <!--<option value="19">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; Nam vulputate-->
+                    <!--</option>-->
+
+                    <!--<option value="20">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; Quisque aliquet-->
+                    <!--</option>-->
+
+
+                    <!--<option value="17">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Sandals-->
+                    <!--</option>-->
+
+                    <!--<option value="18">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Pumps &amp; Heels-->
+                    <!--</option>-->
+
+                    <!--<option value="35">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Flats-->
+                    <!--</option>-->
+
+                    <!--<option value="36">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Sneakers-->
+                    <!--</option>-->
+
+                    <!--<option value="62">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Platform-->
+                    <!--</option>-->
+
+
+                    <!--<option value="28">-->
+                        <!--&#45;&#45;&#45;&#45; Beverage-->
+                    <!--</option>-->
+                    <!--<option value="37">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Mobiles-->
+                    <!--</option>-->
+
+                    <!--<option value="38">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Tablets-->
+                    <!--</option>-->
+
+                    <!--<option value="39">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Earphones-->
+                    <!--</option>-->
+
+                    <!--<option value="40">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Memory Cards-->
+                    <!--</option>-->
+
+                    <!--<option value="41">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Batteries-->
+                    <!--</option>-->
+
+                    <!--<option value="63">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Accessories-->
+                    <!--</option>-->
+
+
+                    <!--<option value="42">-->
+                        <!--&#45;&#45;&#45;&#45; Specialty Deli-->
+                    <!--</option>-->
+                    <!--<option value="43">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Laundry-->
+                    <!--</option>-->
+
+                    <!--<option value="44">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Dishwasher-->
+                    <!--</option>-->
+
+                    <!--<option value="45">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Cooking-->
+                    <!--</option>-->
+
+                    <!--<option value="46">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Refrigeration-->
+                    <!--</option>-->
+
+                    <!--<option value="47">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Floorcare-->
+                    <!--</option>-->
+
+                    <!--<option value="64">-->
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45; Air Conditioner-->
+                    <!--</option>-->
+
+
+                <!--</select>-->
+                <!--<input type="text" class="search-input" style="" placeholder="search...">-->
+                <!--<button class="btn btn-s" style="border-radius: 2px;background-color:#f8694d;border: 0">-->
+                    <!--<i class="fa fa-search"></i>-->
+                <!--</button>-->
+                <!--<div class="mycar" style="float:right;">-->
+                    <!--<a href="" class="btn btn-car">MY CART 0 ITEM <i class="fa fa-angle-down"></i> </a>-->
+                <!--</div>-->
+            <!--</div>-->
+
+        <!--</div>-->
+
+    <!--</div>-->
+<!--</header>-->
+<div class="p1">
+    <div class="container">
+        <div class="row">
+            <div class="p-left col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <h4 class="title_block vertical_title">
+                    <span>Vertical Megamenu
+                        <i class="fa fa-sort-down pull-left">
+                        </i>
+                    </span>
+                </h4>
+                <ul class="p-l-list">
+                    <div class="p-move">
+                        <li>
+                            <span>
+                                <i class="fa fa-star pull-left"></i>SELECT MARKET   <i
+                                    class="fa fa-caret-right pull-right"></i>
+                            </span>
+                            <div class="mmmm"
+                                 style="display:none; position:absolute;top: 49px;left: 277px; top:0;z-index: 100">
+                                <div class="show-li">
+
+                                    <img src="images/2017-03-23_103625.png" height="100%" width="100%"/></div>
+                            </div>
+                        </li>
+                    </div>
+                    <li>
+                        <i class="fa fa-star pull-left"></i>
+                        <span href="#demo" data-toggle="collapse">WOMEN - UNDERWEAR<i
+                                class="fa fa-caret-down pull-right"></i></span>
+                        <div id="demo" class="collapse">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe.
+
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa fa-star pull-left"></i>
+                        <span>SPORTS - OUTDOORS<i class="fa fa-caret-right pull-right"></i></span>
+                    </li>
+                    <li>
+                        <i class="fa fa-star pull-left"></i>
+                        <span>WOMEN - SHOE<i class="fa fa-caret-right pull-right"></i></span>
+                    </li>
+                    <li>
+                        <i class="fa fa-star pull-left"></i>
+                        <span>COSMETICS</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-star pull-left"></i>
+                        <span>MOBILE DIGITAL</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-star pull-left"></i>
+                        <span>INFANT TOYS</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-star pull-left"></i>
+                        <span>FOOD</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-star pull-left"></i>
+                        <span>ELECTRICAL LIFE</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-star pull-left"></i>
+                        <span>FURNITURE</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-star pull-left"></i>
+                        <span>JEWELRY</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-star pull-left"></i>
+                        <span>ACCESSORIES - SUPPLIES</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-star pull-left"></i>
+                        <span>ELECTRICAL LIFE</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-star pull-left"></i>
+                        <span>FURNITURE</span>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="p-main col-lg-6 col-md-6 col-sm-12 col-xs-12 container">
+                <div class="row run-pic">
+                    <div id="myCarousel" class="carousel slide">
+                        <!--指标-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!--项目-->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="images/slide_04.jpg" height="406" width="576"/>
+                                <div class="font-show">Tastebuds</div>
+                            </div>
+                            <div class="item">
+                                <img src="images/slide_05.jpg" height="406" width="576"/>
+                                <div class="font-show">Tastebuds</div>
+                            </div>
+
+                            <div class="item">
+                                <img src="images/slide_06.jpg" height="406" width="576"/></div>
+                        </div>
+                        <!-- 导航 -->
+                        <a class="carousel-control left" data-target="#myCarousel"
+                           data-slide="prev" style="text-align: center ;line-height: 50px">&lsaquo;</a>
+                        <a class="carousel-control right"data-target="#myCarousel"
+                           data-slide="next" style="text-align: center ;line-height: 50px">&rsaquo;</a>
+                    </div>
+                </div>
+                <div class="row run-best hidden-sm hidden-xs">
+                    <div class="best-title">
+                        <span>Best Seller</span>
+                    </div>
+                    <div id="myBest" class="carousel slide">
+                        <!--项目-->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="best-item"><img src="images/372-home_default.jpg" height="384" width="450"/>
+                                </div>
+                                <div class="best-item"><img src="images/372-home_default.jpg" height="384" width="450"/>
+                                </div>
+                                <div class="best-item"><img src="images/372-home_default.jpg" height="384" width="450"/>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item active">
+                                    <div class="best-item"><img src="images/381-home_default.jpg" height="384"
+                                                                width="450"/></div>
+                                    <div class="best-item"><img src="images/381-home_default.jpg" height="384"
+                                                                width="450"/></div>
+                                    <div class="best-item"><img src="images/381-home_default.jpg" height="384"
+                                                                width="450"/></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--nav-->
+                        <a class=" left-b" data-target="#myBest"
+                           data-slide="prev" style="text-align: center ;line-height: 50px">&lsaquo;</a>
+                        <a class=" right-b" data-target="#myBest"
+                           data-slide="next" style="text-align: center ;line-height: 50px">&rsaquo;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-right col-lg-3 col-md-3 col-sm-12 col-xs-12 hidden-xs hidden-sm">
+                <div class="row long-pic" style="margin-bottom: 15px;">
+                    <img src="images/banner-slideshow01.jpg" height="406" width="279"/></div>
+                <div class="row short-pic">
+
+                    <img src="images/banner-slideshow02.jpg" height="221" width="279"/></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="p2 container hidden-md hidden-xs hidden-sm">
+    <div class="row  p2-main ">
+        <img src="images/2017-03-24_144158.png" height="101" width="100%"/></div>
+</div>
+<div class="fruit container">
+    <div class="fruit-left col-lg-3 col-md-3 col-md-12 col-xs-12">
+        <h4 class="left-title main-title"><span>New Products</span></h4>
+        <div class="left-main ">
+            <ul class="f-list">
+                <li class="col-xs-12 col-sm-6 col-md-3 col-lg-12">
+                    <img src="images/361-home_default.jpg"/>
+                    <div class="product-meta">
+                        <h3 class="name">
+                            <a href="#">Namvulputate magna</a>
+                        </h3>
+                        <div class="star">
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa fa-star-half-empty star-color"></i>
+                        </div>
+                        <span class="product-price">$99.99</span><br>
+                    </div>
+                </li>
+                <li class="col-xs-12 col-sm-6 col-md-3 col-lg-12">
+                    <img src="images/475-home_default.jpg">
+                    <div class="product-meta">
+                        <h3 class="name">
+                            <a href="#">Maecenas ultricies</a>
+                        </h3>
+                        <div class="star">
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa fa-star-half-empty star-color"></i>
+                        </div>
+                        <span class="product-price">$99.99</span><br>
+                    </div>
+                </li>
+                <li class="col-xs-12 col-sm-6 col-md-3 col-lg-12">
+                    <img src="images/478-home_default.jpg">
+                    <div class="product-meta">
+                        <h3 class="name">
+                            <a href="#">Curabitur ultricies</a>
+                        </h3>
+                        <div class="star">
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa fa-star-half-empty star-color"></i>
+                        </div>
+                        <span class="product-price">$99.99</span><br>
+                    </div>
+                </li>
+                <li class="col-xs-12 col-sm-6 col-md-3 col-lg-12">
+                    <img src="images/488-home_default.jpg">
+                    <div class="product-meta">
+                        <h3 class="name">
+                            <a href="#">Curabitur ultricies</a>
+                        </h3>
+                        <div class="star">
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa fa-star-half-empty star-color"></i>
+                        </div>
+                        <span class="product-price">$99.99</span><br>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="fruit-right col-lg-9 col-md-9 col-md-12 col-xs-12">
+        <div class="right-head col-lg-12 row">
+            <h4 class="right-title col-lg-6 col-md-4">
+                <span class=" main-title">Fresh Fruit</span>
+            </h4>
+            <!--选项卡li-->
+            <ul class="nav nav-tabs col-lg-6 col-md-8 hidden-sm hidden-xs">
+                <li class="">
+                    <a data-target="#identifier" data-toggle="tab">
+                        Make up
+                    </a>
+                </li>
+                <li>
+                    <a data-target="#identifier2" data-toggle="tab">
+                        Cleanser
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        Skin
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        Hair Care
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="right-main col-lg-12">
+            <div class="main-left col-lg-4 hidden-md  hidden-sm hidden-xs">
+                <img src="images/reinsurance-2-1.jpg"/>
+            </div>
+            <!--选项卡图片组-->
+            <div id="identifier2" class="tab-pane fade  main-right col-lg-8 ">
+                <ul>
+                    <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="t-tit">
+                            <span class="tit" itemprop="name">
+                                <a href="#">
+                                    Nulla facilisi
+                                </a>
+                                <br>
+
+                            </span>
+                            <span class="tit">
+                                      <div class="star">
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa fa-star-half-empty star-color"></i>
+                        </div>
+                                 <a href="#">
+                                   $46.50
+                                </a>
+                                 <span class="hot-tip" href="">hot</span>
+                            </span>
+
+                        </div>
+                        <i class="fa fa-5x fa-heart" style="position: absolute;top: 131px;left: 54px;color: red;"></i>
+                        <img src="images/349-home_default.jpg" class="opa-pic"/>
+
+                    </li>
+                    <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="t-tit">
+                            <span class="tit" itemprop="name">
+                                <a href="#">
+                                    Nulla facilisi
+                                </a>
+                                <br>
+
+                            </span>
+                            <span class="tit">
+                                  <div class="star">
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa fa-star-half-empty star-color"></i>
+                        </div>
+                                 <a href="#">
+                                   $46.50
+                                </a>
+                                 <span class="hot-tip" href="">hot</span>
+                            </span>
+
+                        </div>
+                        <i class="fa fa-5x fa-heart" style="position: absolute;top: 131px;left: 54px;color: red"></i>
+                        <img src="images/361-home_default.jpg" class="opa-pic"/></li>
+                    <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="t-tit">
+                            <span class="tit" itemprop="name">
+                                <a href="#">
+                                    Nulla facilisi
+                                </a>
+                                <br>
+
+                            </span>
+                            <span class="tit">
+                              <div class="star">
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa fa-star-half-empty star-color"></i>
+                        </div>
+                                 <a href="#">
+                                   $46.50
+                                </a>
+                                 <span class="hot-tip" href="">hot</span>
+                            </span>
+
+                        </div>
+                        <i class="fa fa-5x fa-heart" style="position: absolute;top: 131px;left: 54px;color: red"></i>
+                        <img src="images/488-home_default.jpg" class="opa-pic"/></li>
+                    <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="t-tit">
+                            <span class="tit" itemprop="name">
+                                <a href="#">
+                                    Nulla facilisi
+                                </a>
+                                <br>
+
+                            </span>
+                            <span class="tit">
+                                  <div class="star">
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa fa-star-half-empty star-color"></i>
+                        </div>
+                                 <a href="#">
+                                   $46.50
+                                </a>
+                                <span class="hot-tip" href="">hot</span>
+                            </span>
+
+                        </div>
+                        <i class="fa fa-5x fa-heart" style="position: absolute;top: 131px;left: 54px;color: red"></i>
+                        <img src="images/478-home_default.jpg" class="opa-pic"/>
+
+                    </li>
+                    <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="t-tit">
+                            <span class="tit" itemprop="name">
+                                <a href="#">
+                                    Nulla facilisi
+                                </a>
+                                <br>
+
+                            </span>
+                            <span class="tit">
+                                  <div class="star">
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa fa-star-half-empty star-color"></i>
+                        </div>
+                                 <a href="#">
+                                   $46.50
+                                </a>
+                                <span class="hot-tip" href="">hot</span>
+                            </span>
+
+                        </div>
+                        <i class="fa fa-5x fa-heart" style="position: absolute;top: 131px;left: 54px;color: red"></i>
+                        <img src="images/475-home_default.jpg" class="opa-pic"/></li>
+                    <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="t-tit">
+                            <span class="tit" itemprop="name">
+                                <a href="#">
+                                    Nulla facilisi
+                                </a>
+                                <br>
+                            </span>
+                            <span class="tit">
+                                <div class="star">
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa fa-star-half-empty star-color"></i>
+                        </div>
+                                 <a href="#">
+                                   $46.50
+                                </a>
+                                 <span class="hot-tip" href="">hot</span>
+                            </span>
+                        </div>
+                        <i class="fa fa-5x fa-heart" style="position: absolute;top: 131px;left: 54px;color: red"></i>
+                        <img src="images/381-home_default.jpg" class="opa-pic"/>
+                    </li>
+                </ul>
+            </div>
+            <div id="identifier" class="tab-pane fade  main-right col-lg-8 active in">
+                <ul>
+                    <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="t-tit">
+                            <span class="tit" itemprop="name">
+                                <a href="#">
+                                    Nulla facilisi
+                                </a>
+                                <br>
+
+                            </span>
+                            <span class="tit">
+                                      <div class="star">
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa fa-star-half-empty star-color"></i>
+                        </div>
+                                 <a href="#">
+                                   $46.50
+                                </a>
+                                 <span class="hot-tip" href="">hot</span>
+                            </span>
+
+                        </div>
+                        <i class="fa fa-5x fa-heart" style="position: absolute;top: 131px;left: 54px;color: red;"></i>
+                        <img src="images/361-home_default.jpg" class="opa-pic"/>
+
+                    </li>
+                    <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="t-tit">
+                            <span class="tit" itemprop="name">
+                                <a href="#">
+                                    Nulla facilisi
+                                </a>
+                                <br>
+
+                            </span>
+                            <span class="tit">
+                                  <div class="star">
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa fa-star-half-empty star-color"></i>
+                        </div>
+                                 <a href="#">
+                                   $46.50
+                                </a>
+                                 <span class="hot-tip" href="">hot</span>
+                            </span>
+
+                        </div>
+                        <i class="fa fa-5x fa-heart" style="position: absolute;top: 131px;left: 54px;color: red"></i>
+                        <img src="images/349-home_default.jpg" class="opa-pic"/>
+                    </li>
+                    <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="t-tit">
+                            <span class="tit" itemprop="name">
+                                <a href="#">
+                                    Nulla facilisi
+                                </a>
+                                <br>
+
+                            </span>
+                            <span class="tit">
+                              <div class="star">
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa fa-star-half-empty star-color"></i>
+                        </div>
+                                 <a href="#">
+                                   $46.50
+                                </a>
+                                 <span class="hot-tip" href="">hot</span>
+                            </span>
+
+                        </div>
+                        <i class="fa fa-5x fa-heart" style="position: absolute;top: 131px;left: 54px;color: red"></i>
+                        <img src="images/488-home_default.jpg" class="opa-pic"/></li>
+                    <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="t-tit">
+                            <span class="tit" itemprop="name">
+                                <a href="#">
+                                    Nulla facilisi
+                                </a>
+                                <br>
+
+                            </span>
+                            <span class="tit">
+                                  <div class="star">
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa fa-star-half-empty star-color"></i>
+                        </div>
+                                 <a href="#">
+                                   $46.50
+                                </a>
+                                <span class="hot-tip" href="">hot</span>
+                            </span>
+
+                        </div>
+                        <i class="fa fa-5x fa-heart" style="position: absolute;top: 131px;left: 54px;color: red"></i>
+                        <img src="images/478-home_default.jpg" class="opa-pic"/>
+
+                    </li>
+                    <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="t-tit">
+                            <span class="tit" itemprop="name">
+                                <a href="#">
+                                    Nulla facilisi
+                                </a>
+                                <br>
+
+                            </span>
+                            <span class="tit">
+                                  <div class="star">
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa fa-star-half-empty star-color"></i>
+                        </div>
+                                 <a href="#">
+                                   $46.50
+                                </a>
+                                <span class="hot-tip" href="">hot</span>
+                            </span>
+
+                        </div>
+                        <i class="fa fa-5x fa-heart" style="position: absolute;top: 131px;left: 54px;color: red"></i>
+                        <img src="images/475-home_default.jpg" class="opa-pic"/></li>
+                    <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="t-tit">
+                            <span class="tit" itemprop="name">
+                                <a href="#">
+                                    Nulla facilisi
+                                </a>
+                                <br>
+                            </span>
+                            <span class="tit">
+                                <div class="star">
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa  fa-star star-color"></i>
+                            <i class=" fa fa-star-half-empty star-color"></i>
+                        </div>
+                                 <a href="#">
+                                   $46.50
+                                </a>
+                                 <span class="hot-tip" href="">hot</span>
+                            </span>
+                        </div>
+                        <i class="fa fa-5x fa-heart" style="position: absolute;top: 131px;left: 54px;color: red"></i>
+                        <img src="images/381-home_default.jpg" class="opa-pic"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="p4">
+    <div class="container">
+        <div class="icon-show carousel slide" id="myIcon-show">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <ul class="icon-list">
+                        <li><a href=""><img src="images/2-logo_brand.jpg" height="51" width="153"/></a></li>
+                        <li><a href=""><img src="images/3-logo_brand.jpg" height="51" width="153"/></a></li>
+                        <li><a href=""><img src="images/4-logo_brand.jpg" height="51" width="153"/></a></li>
+                        <li><a href=""><img src="images/5-logo_brand.jpg" height="51" width="153"/></a></li>
+                        <li><a href=""><img src="images/6-logo_brand.jpg" height="51" width="153"/></a></li>
+                        <li><a href=""><img src="images/7-logo_brand.jpg" height="51" width="153"/></a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul class="icon-list">
+                        <li><a href=""><img src="images/2-logo_brand.jpg" height="51" width="153"/></a></li>
+                    </ul>
+                </div>
+            </div>
+            <a class=" icon-left" data-target="#myIcon-show"
+               data-slide="prev">&lsaquo;
+            </a>
+            <a class="icon-right " data-target="#myIcon-show"
+               data-slide="next">&rsaquo;
+            </a>
+        </div>
+    </div>
+</div>
+<!--<div class="footer">-->
+    <!--<div class="container">-->
+
+        <!--<div class="f-header col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+            <!--<h4 class="title_block col-xs-12 col-sm-12 col-md-4 col-lg-4"><span><span>Newsletter Sign-up</span></span>-->
+            <!--</h4>-->
+            <!--<div class="block_content toggle-footer col-xs-12 col-sm-12 col-md-8 col-lg-8" style="">-->
+                    <!--<div class="form-group">-->
+                        <!--<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text"-->
+                               <!--name="email" size="18" value="Your e-mail">-->
+                        <!--<button style="background:#F8694D;border: 1px solid #F8694D" type="submit" name="submitNewsletter" class="btn btn-primary button button-newsletter">-->
+                            <!--<span>&lt;!&ndash; <i class="icon-angle-right"></i> &ndash;&gt;Subscribe</span>-->
+                        <!--</button>-->
+                        <!--<input type="hidden" name="action" value="0">-->
+                    <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="f-main hidden-xs hidden-sm hidden-md">-->
+    <!--<img src="images/2017-03-26_164933.png">-->
+        <!--</div>-->
+        <!--<div class="f-footer" >-->
+            <!--<div class="container in-f" >-->
+                <!--<div class="f-text" style="text-align: center; padding: 5px;">-->
+                    <!--<span style="color: #999999;"> Copyright By Your Store © 2017 - Powered By </span><span class="h-t"  >Prestashop</span>-->
+                <!--</div>-->
+                <!--<div class="f-im"-->
+                 <!--style="text-align: center"><img src="images/image-paypal.png" height="18" width="255"/></div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+<script type="text/ng-javascript">
+    $('#identifier a:first').tab('show')
+    $(document).ready(function () {
+        dropdownOpen();//调用
+    });
+    function dropdownOpen() {
+
+        var $dropdownLi = $('.move');
+
+        $dropdownLi.mouseover(function () {
+            $(this).addClass('open');
+        }).mouseout(function () {
+            $(this).removeClass('open');
+        });
+    }
+    $(' .p-move li').on('mouseover', function () {
+        $(' .mmmm').css({
+            display: "block"
+        })
+    }).mouseleave(function () {
+        $(' .mmmm').css({
+            display: "none"
+        })
+    })
+
+    $('.carousel-control').css({
+        top: "150px",
+        width: "50px",
+        height: "50px"
+    })
+    //adv发光效果
+    $('.main-left').on('mouseover', function () {
+
+        $(this).stop().animate({opacity: .8})
+    }).on('mouseout', function () {
+        $(this).stop().animate({opacity: 1})
+    });
+    //product特效
+    $('.opa-pic').on('mouseover', function () {
+        $(this).stop().animate({
+            opacity: .1
+        });
+        $(this).parent().find(".fa-heart").css({
+            display: "block",
+
+        });
+    }).on('mouseout', function () {
+        $(this).stop().animate({
+            opacity: 1
+        });
+        $(this).parent().find(".fa-heart").css({
+            display: "none",
+
+        });
+
+    })
+</script>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable
+=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-1.11.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Login&Register</title>
+    <style>
+        body{
+            background: #f2f2f2;
+        }
+        h3{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        *{
+            padding: 0;
+        }
+        .p_left_right_0{padding-right: 0;padding-left: 0}
+        .m_left_right_0{margin-right: 0;margin-left: 0}
+        .top{
+            border-bottom: 1px solid #ccc;
+            min-height:89px;
+            padding: 20px;
+        }
+        .top_home{
+            color: #ccc;
+        }
+        .top_home:hover{
+            color: #666;
+        }
+        .register{
+            min-height:297px;
+            margin:25px 0;
+            border:1px solid #ccc;
+        }
+        .login{
+            min-height:297px;
+            margin: 25px 0;
+            border:1px solid #ccc;
+        }
+        .btn{
+            background: #333;
+            cursor: pointer;
+            border: none;
+
+        }
+        .dy{
+            margin:5px 0;
+        }
+        .btn:hover{
+            background:#f8694d;
+        }
+        .forget{
+            color: #333;
+            cursor: pointer;
+        }
+        .forget:hover{
+            color: #f88465;
+        }
+        .inp{
+            padding: 0;
+        }
+        @media (max-width: 1202px) {
+            .container.ng-scope{
+                text-align: center;
+            }
+            .form-group{
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- container：容器 -->
+<!-- 以后我们去工作，公司都会有一个样式库，开发规范文档 -->
+<!-- 输入框bootstrap样式：给输入框最外面写上一个 form-group盒子 -->
+<div class="top">
+    <div class="container">
+        <div class="col-sm-12  col-xs-12">
+            <a class="top_home" href="#fruit" style="cursor: pointer">Home</a> / Authentication
+        </div>
+        <div class="col-sm-12  col-xs-12">
+            AUTHENTICATION
+        </div>
+    </div>
+</div>
+<div class="container ">
+    <form class="content" action="">
+        <div class="register col-xs-12 col-sm-6">
+            <h3>CREATE AN ACCOUNT</h3>
+            <hr>
+            <p>Please enter your email address to create an account</p>
+            <label class="col-xs-12 col-sm-12 p_left_right_0" for="Email">Email address：</label>
+            <div class="col-sm-12  col-xs-12 inp">
+                <input id="email" placeholder="please input your email" type="text" class="form-control input-sm dy">
+            </div>
+            <div class="form-group " style="clear:both">
+                <input type="button" class="btn btn-success " value="CREATE AN ACCOUNT">
+            </div>
+        </div>
+        <div class="login col-xs-12 col-sm-6">
+            <h3>Already registered?</h3>
+            <hr>
+            <label class="col-xs-12 col-sm-12 p_left_right_0" for="Email">Email address：</label>
+            <div class="col-sm-12  col-xs-12 inp">
+                <input id="login_email" placeholder="please input your email" type="text" class="dy form-control input-sm">
+            </div>
+            <label class="col-xs-12 col-sm-12 p_left_right_0" for="Password">Password：</label>
+            <div class="col-sm-12  col-xs-12 inp">
+                <input id="password" placeholder="please input your password" type="text" class=" dy form-control input-sm ">
+            </div>
+            <a class="forget col-xs-12 col-sm-12 p_left_right_0">Forgot your password?</a>
+            <div class="form-group " style="clear:both">
+                <input type="button" class=" btn btn-success" value="SIGN IN">
+            </div>
+
+        </div>
+    </form>
+
+</div>
+
+</body>
+</html>
